@@ -1,7 +1,2 @@
-进击的 Python 青年 ！！！ 
-
-
-
- 
- 
+进击的 Python 青年 ！！！  
 ———————————————————————————————————   life is short, you need python !!!
