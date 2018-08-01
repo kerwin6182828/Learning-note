@@ -256,18 +256,6 @@ jis3 : 小甲
 `比心~ ❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤`
 `:-D`
 
-#### 如果觉得知乎上的排版有点看不清楚，[戳这里，阅读原文噢~~](https://github.com/kerwin6182828/Learning-note/blob/master/Python/py3%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93.md)
-若还有对编码的任何问题，欢迎给我[**留言**](https://github.com/kerwin6182828/Learning-note/blob/master/Python/py3%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93.md)~
-若是我哪里写的不对，也请斧正，咱们一起探讨哦，哈哈哈~~ 
-   \@>_<@~ 
-
-
-
-
-
-
-
-
 
 
 
