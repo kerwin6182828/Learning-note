@@ -1,4 +1,3 @@
-
 # 高中生也能看懂的 “ 梯度下降 ” 算法 （线性回归篇）
 
 ### ## 文章背景：
@@ -81,6 +80,7 @@ e:error， 表示“损失”
 ![enter image description here](https://lh3.googleusercontent.com/vrxeVb9un5b2fcuTLWCup9TFlgOhYh2LH7b27J6Z925GBIFQ5_QxjCKNhQ4fSj7dYTaPfKy7sVA)（实际值 - 预测值）
 
 把两个小红点代入上式，计算如下：
+
 ![enter image description here](https://lh3.googleusercontent.com/pA5EIxBE2oapGmkkNH2g2rInPgyF39bjF9ILcTqvqIl1hzQtn0uMiBIEJgVknGAJKO-otyEzssA)
 
 
@@ -91,6 +91,7 @@ e:error， 表示“损失”
 ![enter image description here](https://lh3.googleusercontent.com/H66DsJ_PkJ7hixDgqQKiOAWSv5Fnbb5xX9P-NA3ij6XZkJNBcdlWni9UgJ_j5PdM1wg-prUc7sg)（实际值 - 预测值）
 
 把两个小红点代入上式，计算如下：
+
 ![enter image description here](https://lh3.googleusercontent.com/tKn_PkpmxnI2njVg1KeDq09ufXgId2fvm5UleZFxikBKtn9iWjyL3T2r30mssxtQqsx52JhFGmI)
 
 此时，我们需要分类讨论：
@@ -118,17 +119,23 @@ e:error， 表示“损失”
 既然绝对值在数学上不好处理，我们发现有个东西可以结合前面思路的优点，那就是 **“平方和”** 。
 
 于是乎：![enter image description here](https://lh3.googleusercontent.com/C1gyLP2giiPbCxeNPXqKi6AoLjIzkCTacu4eBiUO55z7OA0XTlrynp_8oInTbvD_sEq0A_x_5zs)（实际值 - 预测值）
+
 我们可以简单地认为，以这种形式去计算我们的 **损失函数** 是比较合理的！
 
 计算如下：（把俩小红点代入下式）
+
 ![enter image description here](https://lh3.googleusercontent.com/8sVaAbXBvbv15vjTktuZQbALpXcut59zKfb5YC9zp_JyL38nCnNLnWQ-dGEjoCh4vL8XpdxyfwI)
 
-对上述损失函数进行求导，得到：![enter image description here](https://lh3.googleusercontent.com/3WcaOn6BWdtFQxGkkEwh1E99vQHUYW3iRqrfE-k06N6s6w2QfhLon8xm3Bzb2J0S0oT1BIAhc-Ed)
+对上述损失函数进行求导，得到:
+
+![enter image description here](https://lh3.googleusercontent.com/3WcaOn6BWdtFQxGkkEwh1E99vQHUYW3iRqrfE-k06N6s6w2QfhLon8xm3Bzb2J0S0oT1BIAhc-Ed)
+
 （导函数上的每一个点，代表着原函数每一个点上的斜率）
 （高中就有学求导啦，应该不需要我过多解释吧？哈哈）
 
 如下图：
 ![enter image description here](https://lh3.googleusercontent.com/JyOcIEwNlzDgxZ_i4jdhToeNyAo8xTRheeoiE8HO39qg7c98K3A6XuHxNZlazqI1DSX3BnENBFa6)
+
 蓝曲线：原损失函数
 红直线：导函数
 （导函数的值越接近0， 损失函数的斜率越平，当它躺平的时候，我们可以说此时就是我们要找的损失函数的最小值点）
@@ -139,6 +146,7 @@ e:error， 表示“损失”
 这是因为，“平方” 有放大、缩小的功能。对偏差值大的数，平方后更大了；而偏差值小的数， 平方后显得更没啥偏差了........
 
 我们平时更常使用的正是 “ 思路3 ” 中对 **损失函数e** 的表示方法。
+
 我认为优点有二：
 ① 可导，方便计算。
 ② 不会为了得到最小的损失函数，而一味地贴近某一点，平方在这里就显得更具备全局观，似乎也有助于避免[过拟合](https://baike.baidu.com/item/%E8%BF%87%E6%8B%9F%E5%90%88/3359778?fr=aladdin)。
@@ -212,7 +220,8 @@ y = 318/310 * x
 先确定好一个未知数的值，然后求解另一个未知数。
 
 ![enter image description here](https://lh3.googleusercontent.com/PcTMTHt8PKRudTx12eQ2K7EIj8yRxnAXU42_p9vyXEpeNHpBuq6Z1ve0dBfKPNnEwwEpfS11xwYW)
-稍微举几种情况：
+
+举几种情况：
 (大家也可以跟着我一起动笔写一写，加深理解~)
 ```
 当 b = 0 时， ∑e = 5a^2 - 8a + 5;  易得：a = 0.8时，∑e有最小值= 1.8 。
@@ -279,7 +288,7 @@ y = 318/310 * x
 <br>
 
 **附：**
-如果觉得知乎的排版有点乱的话，[可以点击这里，查看原文~]()
+如果觉得知乎的排版有点乱的话，[可以点击这里，查看原文~](https://github.com/kerwin6182828/Learning-note/blob/master/Python/linear_regression.md)
 
 <br>
 
