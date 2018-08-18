@@ -51,7 +51,8 @@
 ### # 第 ③ 步
 下面开始介绍简单的算法：
 我们可以直观地认为，当这条线离那两个红点的距离越近，那么这条线就越能够准确地描述 **“面粉——大饼”** 的数量关系。而这条线，恰恰也就是我们的目标回归线，我们可以用:
- ![**y{p} = a * x{a}**](https://lh3.googleusercontent.com/eX4znCng63O3h0xzsUzcT7NnIC1RNLWCaJsHiBznloerDdj3S8f184AH_JLJmISO2yoEu1QtVWc) 来表示这条未知的目标直线。
+![**y{p} = a * x{a}**](https://lh3.googleusercontent.com/eX4znCng63O3h0xzsUzcT7NnIC1RNLWCaJsHiBznloerDdj3S8f184AH_JLJmISO2yoEu1QtVWc)       
+ 来表示这条未知的目标直线。
  
  **注意：**
  ```
@@ -81,6 +82,7 @@ e:error， 表示“损失”
 
 ![enter image description here](https://lh3.googleusercontent.com/vrxeVb9un5b2fcuTLWCup9TFlgOhYh2LH7b27J6Z925GBIFQ5_QxjCKNhQ4fSj7dYTaPfKy7sVA)（实际值 - 预测值）
 
+
 把两个小红点代入上式，计算如下：
 
 ![enter image description here](https://lh3.googleusercontent.com/pA5EIxBE2oapGmkkNH2g2rInPgyF39bjF9ILcTqvqIl1hzQtn0uMiBIEJgVknGAJKO-otyEzssA)
@@ -92,9 +94,11 @@ e:error， 表示“损失”
 
 ![enter image description here](https://lh3.googleusercontent.com/H66DsJ_PkJ7hixDgqQKiOAWSv5Fnbb5xX9P-NA3ij6XZkJNBcdlWni9UgJ_j5PdM1wg-prUc7sg)（实际值 - 预测值）
 
+
 把两个小红点代入上式，计算如下：
 
 ![enter image description here](https://lh3.googleusercontent.com/tKn_PkpmxnI2njVg1KeDq09ufXgId2fvm5UleZFxikBKtn9iWjyL3T2r30mssxtQqsx52JhFGmI)
+
 
 此时，我们需要分类讨论：
 ```
@@ -122,15 +126,19 @@ e:error， 表示“损失”
 
 于是乎：![enter image description here](https://lh3.googleusercontent.com/C1gyLP2giiPbCxeNPXqKi6AoLjIzkCTacu4eBiUO55z7OA0XTlrynp_8oInTbvD_sEq0A_x_5zs)（实际值 - 预测值）
 
+
 我们可以简单地认为，以这种形式去计算我们的 **损失函数** 是比较合理的！
 
 计算如下：（把俩小红点代入下式）
 
 ![enter image description here](https://lh3.googleusercontent.com/8sVaAbXBvbv15vjTktuZQbALpXcut59zKfb5YC9zp_JyL38nCnNLnWQ-dGEjoCh4vL8XpdxyfwI)
 
+
 对上述损失函数进行求导，得到:
 
+
 ![enter image description here](https://lh3.googleusercontent.com/3WcaOn6BWdtFQxGkkEwh1E99vQHUYW3iRqrfE-k06N6s6w2QfhLon8xm3Bzb2J0S0oT1BIAhc-Ed)
+
 
 （导函数上的每一个点，代表着原函数每一个点上的斜率）
 （高中就有学求导啦，应该不需要我过多解释吧？哈哈）
@@ -174,6 +182,7 @@ e:error， 表示“损失”
 依据 “ 第 ③ 步 ” 中“ 思路 3 ” 所说，我们的 **e** 首先选择：
 ![enter image description here](https://lh3.googleusercontent.com/C1gyLP2giiPbCxeNPXqKi6AoLjIzkCTacu4eBiUO55z7OA0XTlrynp_8oInTbvD_sEq0A_x_5zs)
 
+
 将上面的7个红点的坐标，分别代入上面的 **e** 中，得到**损失函数 ∑e**的表达式：**∑e** = 155a^2 - 318a + 172；
 它的导函数为：310a - 318
 
@@ -207,12 +216,15 @@ y = 318/310 * x
 依旧根据 “ 第 ③ 步 ” 中 “ 思路 3 ” 所说，我们的 **e** 首先选择：
 ![enter image description here](https://lh3.googleusercontent.com/C1gyLP2giiPbCxeNPXqKi6AoLjIzkCTacu4eBiUO55z7OA0XTlrynp_8oInTbvD_sEq0A_x_5zs)
 
+
 把模型“ y = a*x + b ” 代入上面 **e** 表示的损失函数中，可以得到：
 ![enter image description here](https://lh3.googleusercontent.com/AUKidDxHg2QL0VpbK7XeTCLCeN0oMW47jxzsmnS09wgR_49BU8mNS2-T4R866a3L7gnRIhykrEEz)
 `这里的y和x都是实际的小红点，真正要求的未知数是a、b 这两个家伙。`
 
+
 把两个小红点代入上式，计算如下：
 ![enter image description here](https://lh3.googleusercontent.com/kkoJ6V9wwLzOAHIpjvSi8Cn7MYsX0b0Z2Byd2D8JY2TR5MBqWVQclarSDgDg5OJ6UGuybKS-0YEr)
+
 
 我们可以直观地看到，将求和函数中的两个“二项式”展开、合并同类项后，我们惊喜地发现“未知数”项 从2个 变成了 5个，这让我咋整呢？
 一元二次函数求个导，再等于一下0，就算出 **e** 的最小值了，但上面这个二元二次六项式咋求解最小值呢？
@@ -239,6 +251,7 @@ y = 318/310 * x
  **y = -a + 3** 
  （以上列举的只是一种思路，不可能真的让你穷举所有情况，会死人的）
  （当然，你要是会编程的话，穷举也不是不可以，一个循环就搞定了，让机器帮你做这蠢事~~）
+
 
 你会发现， **y = -a + 3** 就是那两个红点的连线啊，那干嘛这么费事？
 因为我这里只给了老王、小王两个“样本”，如果把后面的“小吕”、“小布” 都画上，你不可能再用直接连线的方法了吧？
@@ -299,6 +312,7 @@ y = 318/310 * x
 如果觉得知乎的排版有点乱的话，[可以点击这里，查看原文~](https://github.com/kerwin6182828/Learning-note/blob/master/Python/linear_regression.md)
 
 <br>
+
 ![enter image description here](https://lh3.googleusercontent.com/LqQkNQCcKvsEEHuJI10QASVNA4gS2v1D9iYOxHFNzJG_S9iuPdsPI46543qrv-ymAVo1by8sZCMt)
 
 
