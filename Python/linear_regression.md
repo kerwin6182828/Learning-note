@@ -309,7 +309,7 @@ y = 318/310 * x
 <br>
 
 **附：**
-如果觉得知乎的排版有点乱的话，[可以点击这里，查看原文~](https://github.com/kerwin6182828/Learning-note/blob/master/Python/linear_regression.md)
+
 
 <br>
 
