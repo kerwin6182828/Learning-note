@@ -1,4 +1,6 @@
 # 高中生也能看懂的 “ 梯度下降 ” 算法 （线性回归篇）
+![enter image description here](https://lh3.googleusercontent.com/Ypr1Drx6BvV9ZfCEmr0tgEKlIfs4OcImtmwCe4MybiJo2ttGHbu5ISR8UqR1yYXOSwBlgIZNchOU)
+
 
 ### ## 文章背景：
 > 鄙人最近在研究机器学习的相关算法，查阅很多专业书籍、csdn文章、知乎大神回答、youtube视频，都发现一个高度统一的 “ 问题 ”（严格意义上不能说是问题）：
@@ -266,7 +268,13 @@ y = 318/310 * x
 而连接z轴上的所有点，就会织成一个“面”。
 即：“ ∑e ” 现在是一个“面”，而不是“线”。
 （为了更生动地描述这个具有“立体感”的二元函数，我可能会再写一篇文章，用图形来说明）
+
 ```
+<br>
+
+![enter image description here](https://lh3.googleusercontent.com/fIjf24Zry3CQD-UaCGQIs642SA6PC4YcvonsEqU5LTqCGWDqYaX-e1HMqsaEo50vLMDEnclCNL7_)
+
+
 <br>
 
 ---
@@ -291,10 +299,7 @@ y = 318/310 * x
 如果觉得知乎的排版有点乱的话，[可以点击这里，查看原文~](https://github.com/kerwin6182828/Learning-note/blob/master/Python/linear_regression.md)
 
 <br>
-
-![enter image description here](https://lh3.googleusercontent.com/tHmsaOCqxsJzJzYDuOkZn-Hv_63_bbBUZyJxDRprWwB75wqk7hR4QU6jlqKDWy4MyJSkMdRtsnKx)
-
-
+![enter image description here](https://lh3.googleusercontent.com/LqQkNQCcKvsEEHuJI10QASVNA4gS2v1D9iYOxHFNzJG_S9iuPdsPI46543qrv-ymAVo1by8sZCMt)
 
 
 
